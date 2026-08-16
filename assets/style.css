@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("fonts/montserrat-var.woff2") format("woff2");
+}
+
 /* ==========================================================================
    Haniya Amjad, Product Portfolio
    Design system. Apple-grade restraint: black, white, one accent per case.
