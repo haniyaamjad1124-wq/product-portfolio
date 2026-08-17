@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haniya Amjad Portfolio</title>
 <meta name="description" content="Product management case studies across RCA, metrics, product improvement, product design and guesstimates, plus a capstone project with a working prototype.">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body>
 
@@ -30,30 +30,23 @@
     <div class="wrap">
       <p class="eyebrow eyebrow-muted">Product case studies</p>
       <h1 class="h-display">Product problems, worked end to end.</h1>
-      <p class="lede">
-        7 case studies across five categories. Each one starts with the problem as it was
-        actually posed, shows the approach, and ends with a solution you can see on a screen.
-      </p>
     </div>
   </header>
 
   <div class="wrap">
-    <div class="filters" role="group" aria-label="Filter case studies by category">
-      <button class="filter is-on" data-filter="all">All</button>
-      <button class="filter" data-filter="rca">RCA</button>
-      <button class="filter" data-filter="metrics">Metrics</button>
-      <button class="filter" data-filter="improvement">Product improvement</button>
-      <button class="filter" data-filter="design">Product design</button>
-      <button class="filter" data-filter="guesstimates">Guesstimates</button>
+    <div class="filters cat-tiles" role="group" aria-label="Filter case studies by category">
+      <button class="filter cat-tile is-on" data-filter="all" style="--cat:#6e6e73">All work</button>
+      <button class="filter cat-tile" data-filter="rca" style="--cat:#D99A00">RCA</button>
+      <button class="filter cat-tile" data-filter="metrics" style="--cat:#16A34A">Metrics</button>
+      <button class="filter cat-tile" data-filter="improvement" style="--cat:#E0446D">Product improvement</button>
+      <button class="filter cat-tile" data-filter="design" style="--cat:#0EA5E9">Product design</button>
+      <button class="filter cat-tile" data-filter="guesstimates" style="--cat:#6D5BD0">Guesstimates</button>
     </div>
 
     <section class="cat-block" data-cat="rca" style="--cat:#D99A00;">
-      <div class="cat-head">
+      <div class="cat-head cat-head-slim">
         <span class="cat-dot"></span>
-        <div>
-          <h2>RCA</h2>
-          <p>A number moved and nobody knows why. Break the problem apart, isolate the cause, and prove it before proposing a fix.</p>
-        </div>
+        <h2>RCA</h2>
       </div>
       <div class="case-grid">
         <a class="case-card case-scope" href="#zepto-aov" style="--c-l:#950edb; --c-d:#c05df5;">
@@ -65,19 +58,16 @@
           <div class="card-tags"><span>Problem framing</span><span>Prioritisation</span><span>Prototype</span></div>
           <p>A ₹157 gap to the category leader, traced to a stretch of the price range in which the product gives a shopper no reason to add anything.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View case study</span>
           </div>
         </a>
       </div>
     </section>
 
     <section class="cat-block" data-cat="metrics" style="--cat:#16A34A;">
-      <div class="cat-head">
+      <div class="cat-head cat-head-slim">
         <span class="cat-dot"></span>
-        <div>
-          <h2>Metrics</h2>
-          <p>Choose the number a business should organise around, decompose it into things teams can own, and guard it against being gamed.</p>
-        </div>
+        <h2>Metrics</h2>
       </div>
       <div class="case-grid">
         <a class="case-card case-scope" href="#zomato-tier1-strategy" style="--c-l:#e23744; --c-d:#ff6b75;">
@@ -89,19 +79,16 @@
           <div class="card-tags"><span>North star</span><span>OKRs</span><span>Funnel</span><span>Cohorts</span></div>
           <p>A north star that factors into four key results, a funnel holding two different kinds of problem, and six cohorts collapsed into two patterns.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View case study</span>
           </div>
         </a>
       </div>
     </section>
 
     <section class="cat-block" data-cat="improvement" style="--cat:#E0446D;">
-      <div class="cat-head">
+      <div class="cat-head cat-head-slim">
         <span class="cat-dot"></span>
-        <div>
-          <h2>Product improvement</h2>
-          <p>An existing product underperforms against the job it was hired to do. Find the failure, then close it with what already exists.</p>
-        </div>
+        <h2>Product improvement</h2>
       </div>
       <div class="case-grid">
         <a class="case-card case-scope" href="#uber-pickup-experience" style="--c-l:#276ef1; --c-d:#5b91ff;">
@@ -113,7 +100,7 @@
           <div class="card-tags"><span>User research</span><span>Personas</span><span>Journey map</span></div>
           <p>Primary research with 41 riders on why pickup fails, four behavioural personas, and three research led solutions.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View case study</span>
           </div>
         </a>
         <a class="case-card case-scope" href="#uber-eats-group-order" style="--c-l:#0b7a46; --c-d:#2fd08a;">
@@ -125,19 +112,16 @@
           <div class="card-tags"><span>Jobs to be done</span><span>First principles</span><span>Roadmap</span></div>
           <p>A feature that ships and functions but is not being hired. Traced from three job types through six anxieties to five design guarantees.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View case study</span>
           </div>
         </a>
       </div>
     </section>
 
     <section class="cat-block" data-cat="design" style="--cat:#0EA5E9;">
-      <div class="cat-head">
+      <div class="cat-head cat-head-slim">
         <span class="cat-dot"></span>
-        <div>
-          <h2>Product design</h2>
-          <p>Evaluate what is on screen, then rebuild it so the interface answers the question the user came with.</p>
-        </div>
+        <h2>Product design</h2>
       </div>
       <div class="case-grid">
         <a class="case-card case-scope" href="#garmin-connect-ux" style="--c-l:#007cc3; --c-d:#4fb3e8;">
@@ -149,7 +133,7 @@
           <div class="card-tags"><span>Heuristic evaluation</span><span>Redesign</span><span>Clickable prototype</span></div>
           <p>Twelve usability issues across ten heuristics in one everyday flow, and a redesigned interface with every fix applied.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View case study</span>
           </div>
         </a>
         <a class="case-card case-scope" href="#vitafit-prd" style="--c-l:#0d9488; --c-d:#2dd4bf;">
@@ -161,19 +145,16 @@
           <div class="card-tags"><span>PRD</span><span>Feature design</span><span>Clickable prototype</span></div>
           <p>Rotating trainers who never remember you, and a leaderboard nobody casual can win. A requirements document written for the teams that build it.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View case study</span>
           </div>
         </a>
       </div>
     </section>
 
     <section class="cat-block" data-cat="guesstimates" style="--cat:#6D5BD0;">
-      <div class="cat-head">
+      <div class="cat-head cat-head-slim">
         <span class="cat-dot"></span>
-        <div>
-          <h2>Guesstimates</h2>
-          <p>Size a market or a problem from first principles, stating every assumption as you go.</p>
-        </div>
+        <h2>Guesstimates</h2>
       </div>
       <div class="case-grid">
         <a class="case-card case-scope" href="#pickup-market-sizing" style="--c-l:#6d5bd0; --c-d:#a79bff;">
@@ -185,7 +166,7 @@
           <div class="card-tags"><span>Market sizing</span><span>Cross check</span><span>Sensitivity</span></div>
           <p>A claim of ₹165 crore a year, built two independent ways so the two can be checked against each other, then stressed until it produces a range.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View case study</span>
           </div>
         </a>
       </div>
@@ -209,14 +190,14 @@
     <div class="case-grid">
         <a class="case-card case-scope" href="#sip-academy" style="--c-l:#1e56a0; --c-d:#7fb0ff;">
           <div class="case-card-top">
-            <span class="co"><span class="logo-mark" aria-hidden="true">S</span>SIP Academy India</span>
-            <span class="tag">Shipped work</span>
+            <span class="co"><span class="logo-mark" aria-hidden="true">M</span>MIKIDS</span>
+            <span class="tag">Program</span>
           </div>
           <h3>Two and a half years on MIKIDS</h3>
-          <div class="card-tags"><span>Shipped work</span><span>Retention</span><span>Record year</span></div>
-          <p>The one that shipped. Dropout contained from 26% to about 20%, a record 3 crore plus year of new business, and a six KRA dashboard built to keep the numbers honest.</p>
+          <div class="card-tags"><span>Program</span><span>Retention</span><span>Record year</span></div>
+          <p>The one that shipped. An edtech program in 500 plus schools, dropout contained from 26% to about 20%, and a record 3 crore plus year of new business.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View project</span>
           </div>
         </a>
         <a class="case-card case-scope" href="#cultfit-anchored-week" style="--c-l:#ef430a; --c-d:#ff7a4d;">
@@ -228,7 +209,7 @@
           <div class="card-tags"><span>Capstone</span><span>Field research</span><span>Working prototype</span></div>
           <p>Field research across six centres, a finding that killed the obvious solution, two bets built entirely from existing surfaces, and a working prototype you can open and use.</p>
           <div class="case-card-foot">
-            <span class="link-arrow">Read</span>
+            <span class="link-arrow">View project</span>
           </div>
         </a>
     </div>
@@ -247,7 +228,7 @@
     <p class="eyebrow">About</p>
     <h1 class="h1">Haniya Amjad</h1>
     <p class="lede">
-      Program and product manager with three plus years across education, fintech and early
+      Product manager with five plus years of experience across education, fintech and early
       stage ventures.
     </p>
     <div class="btn-row" style="margin-top:22px">
@@ -279,14 +260,14 @@
 
   <div class="grid reveal" style="grid-template-columns:1fr;margin-top:20px">
     <div class="card">
-      <h4>Assistant Product Manager, SIP Academy India</h4>
-      <p class="xsmall muted" style="margin:4px 0 10px">May 2024 to Present · Chennai · education programs in 500 plus schools across 8 states</p>
+      <h4>Assistant Product Manager, MIKIDS · edtech</h4>
+      <p class="xsmall muted" style="margin:4px 0 10px">May 2024 to Present · Chennai · an edtech program in <strong>500 plus schools</strong> across 8 states</p>
       <ul style="font-size:14.5px;color:var(--text-mid);margin:0">
-        <li>Own retention across 8 states. Contained school dropout from 26% to about 20%, with ₹1.4 crore at risk, and drove a record ₹3 crore plus year of new business, a first in the 20 year history of MIKIDS</li>
-        <li>Took MIKIDS Science, a 40 lesson curriculum program, from needs assessment to deployment in 241 schools</li>
-        <li>Run a feedback system covering 1,200 plus teachers and 80% plus of partner schools</li>
-        <li>Build the dashboards leadership reviews run on, tracking ₹67.4 lakh dropout exposure, a ₹54.5 lakh upsell pipeline and 97% plus collection efficiency</li>
-        <li>Coordinated the end to end launch of Orator, a Class 4 communication program, with ₹40 lakh plus projected from 100 schools</li>
+        <li>Own retention across 8 states. Contained school dropout from <strong>26% to about 20%</strong>, with ₹1.4 crore at risk, and drove a record <strong>₹3 crore plus</strong> year of new business, a first in the program's 20 year history</li>
+        <li>Took MIKIDS Science, a 40 lesson curriculum program, from needs assessment to deployment in <strong>241 schools</strong></li>
+        <li>Run a feedback system covering <strong>1,200 plus teachers</strong> and 80% plus of partner schools</li>
+        <li>Build the dashboards leadership reviews run on, tracking dropout exposure, a <strong>₹54.5 lakh</strong> upsell pipeline and <strong>97% plus</strong> collection efficiency</li>
+        <li>Coordinated the end to end launch of Orator, a Class 4 communication program, with <strong>₹40 lakh plus</strong> projected from 100 schools</li>
       </ul>
     </div>
 
@@ -312,8 +293,8 @@
       <h4>Assistant Lead, Growth, SAWO Labs</h4>
       <p class="xsmall muted" style="margin:4px 0 10px">June 2021 to November 2021 · Bengaluru · seed stage SaaS</p>
       <ul style="font-size:14.5px;color:var(--text-mid);margin:0">
-        <li>Defined a unified KPI and alignment framework across 5 departments</li>
-        <li>Conducted market research and revamped the partnership strategy across 25 plus platforms</li>
+        <li>Defined a unified KPI and alignment framework across <strong>5 departments</strong></li>
+        <li>Conducted market research and revamped the partnership strategy across <strong>25 plus platforms</strong></li>
       </ul>
     </div>
   </div>
@@ -326,21 +307,21 @@
 
   <div class="grid reveal" style="grid-template-columns:1fr;margin-top:20px">
     <div class="card">
-      <h4>Jagriti Yatra, G20 edition</h4>
+      <h4><span class="logo-mark" aria-hidden="true">J</span>Jagriti Yatra, G20 edition</h4>
       <p class="xsmall muted" style="margin:4px 0 10px">November 2023 · winner, BGT award for innovation in education</p>
       <ul style="font-size:14.5px;color:var(--text-mid);margin:0">
-        <li>Selected for a 15 day, 8,000 kilometre train journey engaging grassroots enterprises across Tier 2 and Tier 3 districts</li>
+        <li>Selected for a 15 day, <strong>8,000 kilometre</strong> train journey engaging grassroots enterprises across Tier 2 and Tier 3 districts</li>
         <li>Researched gaps in education access with village communities and structured the findings into an enterprise model</li>
-        <li>Won the Biz Gyan Tree award for innovation in education among 500 plus participants nationwide</li>
+        <li>Won the Biz Gyan Tree award for innovation in education among <strong>500 plus participants</strong> nationwide</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>Program Manager, U&amp;I Trust</h4>
+      <h4><span class="logo-mark" aria-hidden="true">U</span>Program Manager, U&amp;I Trust</h4>
       <p class="xsmall muted" style="margin:4px 0 10px">2019 to 2022 · volunteer</p>
       <ul style="font-size:14.5px;color:var(--text-mid);margin:0">
-        <li>Led 35 learning centre leaders delivering after school education to underserved children</li>
-        <li>Raised ₹50 lakh plus in funding and designed student level learning outcome metrics</li>
+        <li>Led <strong>35 learning centre leaders</strong> delivering after school education to underserved children</li>
+        <li>Raised <strong>₹50 lakh plus</strong> in funding and designed student level learning outcome metrics</li>
         <li>The centre won the best performing centre award</li>
       </ul>
     </div>
@@ -349,7 +330,7 @@
 
 <section class="section-sm" id="about--education">
   <div class="prose reveal">
-    <h2 class="h2">Education and upskilling</h2>
+    <h2 class="h2">Education</h2>
   </div>
 
   <div class="grid reveal" style="grid-template-columns:1fr;margin-top:20px">
@@ -373,10 +354,10 @@
 
     <div class="card">
       <h4>AI First Product Management, Airtribe</h4>
-      <p class="xsmall muted" style="margin:4px 0 10px">Upskilling program · completed</p>
+      <p class="xsmall muted" style="margin:4px 0 10px">Airtribe</p>
       <ul style="font-size:14.5px;color:var(--text-mid);margin:0">
-        <li>Eight working assignments covering research, problem framing, UX evaluation, PRD writing, metrics and growth, all published on this site as case studies</li>
-        <li>Capstone on cult.fit routine activation, with field research across six centres and a working prototype</li>
+        <li>Topics covered: product thinking, user research, problem framing, UX evaluation, PRD writing, product communication, metrics and analytics, growth and prioritisation</li>
+        <li>A capstone spanning all of it, published on this site with a working prototype</li>
       </ul>
     </div>
   </div>
@@ -386,14 +367,15 @@
   <div class="prose reveal">
     <h2 class="h2">What I work with</h2>
     <div class="tag-row" style="margin:16px 0 12px">
-      <span class="tag tag-plain">Advanced Excel</span>
+      <span class="tag tag-plain">Excel, advanced</span>
       <span class="tag tag-plain">Tableau</span>
-      <span class="tag tag-plain">No code dashboards</span>
+      <span class="tag tag-plain">Dashboards</span>
       <span class="tag tag-plain">Jira</span>
       <span class="tag tag-plain">Trello</span>
       <span class="tag tag-plain">Miro</span>
       <span class="tag tag-plain">Notion</span>
       <span class="tag tag-plain">Agile and Kanban</span>
+      <span class="tag">AI stack · Claude, Lovable, n8n, Wispr Flow</span>
     </div>
     <p class="small muted">
       Program design and execution, stakeholder mapping, research and data analysis, root cause
@@ -420,7 +402,7 @@
     <p class="toc-t">On this page</p>
     <a href="#about--experience">Work experience</a>
     <a href="#about--volunteering">Volunteering</a>
-    <a href="#about--education">Education and upskilling</a>
+    <a href="#about--education">Education</a>
     <a href="#about--toolkit">What I work with</a>
     <a href="#about--contact">Contact</a>
   </aside>
@@ -4182,8 +4164,8 @@
 <header class="case-hero">
   <div class="wrap">
     <div class="case-brand">
-      <span class="co"><span class="logo-mark" aria-hidden="true">S</span>SIP Academy India · MIKIDS</span>
-      <span class="tag">Shipped work</span>
+      <span class="co"><span class="logo-mark" aria-hidden="true">M</span>MIKIDS · Edtech product</span>
+      <span class="tag">Program</span>
       <span class="tag tag-plain">Program delivery and retention</span>
     </div>
     <h1 class="h1">Two and a half years on MIKIDS</h1>
@@ -4215,7 +4197,7 @@
     <p class="eyebrow">The problem</p>
     <h2 class="h2">A quarter of the schools were leaving every year</h2>
     <p>
-      MIKIDS runs skill programs inside 500 plus partner schools across 8 states. When I took over
+      MIKIDS is an edtech program running inside 500 plus partner schools across 8 states. When I took over
       retention, 26% of schools were dropping out annually, which put ₹1.4 crore of revenue at
       risk and meant field teams spent their year re selling to replacement schools instead of
       deepening the ones they had.
@@ -4322,30 +4304,72 @@
 
 <section class="section-sm" id="sip-academy--dashboard">
   <div class="prose reveal">
-    <p class="eyebrow">The tool</p>
-    <h2 class="h2">A six KRA dashboard, built rather than bought</h2>
-    <p>
-      For the annual appraisal I built a working dashboard, a React application deployed on
-      Vercel, that put all six of my KRAs in one place. Retention by region across two years,
-      teacher and school leader feedback with collection and efficacy scores, trainer pulse by
-      region, program completion with teacher and student impact, and revenue contribution by
-      line, including what Orator added.
-    </p>
-    <p>
-      It also settled an internal debate with data. Schools that gave feedback dropped out at
-      nearly the same rate as schools that gave none, which meant feedback participation was not
-      the retention predictor people assumed, and the effort belonged elsewhere.
-    </p>
-    <div class="note">
-      <span class="note-k">Why there is no link</span>
-      <p>
-        The dashboard runs on real internal company data, and the figures in it are working
-        numbers rather than audited finals. It stays private. A walkthrough with the data
-        anonymised is available in an interview setting, and this page carries conservative
-        aggregates only.
-      </p>
-    </div>
+    <p class="eyebrow">The results</p>
+    <h2 class="h2">What the year actually produced</h2>
+    <ul style="font-size:15px;color:var(--text-mid)">
+      <li>A record <strong>₹3 crore plus of new business in a single year</strong>, the first time in the program's 20 year history</li>
+      <li>School dropout contained from <strong>26% to about 20%</strong>, with the retention playbook adopted by leadership</li>
+      <li><strong>Orator launched as a whole new business line</strong>, coordinated across content, design and engineering, with ₹40 lakh plus projected from the first 100 schools</li>
+      <li>Monetisation of existing schools worked: a <strong>₹54.5 lakh upsell pipeline</strong> built from schools already running the program, at near zero acquisition cost</li>
+      <li>Collections held at <strong>97% plus efficiency</strong> while the program grew</li>
+      <li>One question settled with data: schools giving feedback dropped out at nearly the same rate as schools giving none, so the retention effort moved to where it mattered</li>
+    </ul>
   </div>
+
+  <figure class="diagram reveal">
+    <div class="diagram-head">
+      <p class="eyebrow">From the dashboard I built</p>
+      <h3>The year, in four panels</h3>
+      <p>Redrawn from the internal tool with conservative aggregates only.</p>
+    </div>
+    <div class="diagram-body">
+      <svg viewBox="0 0 900 330" role="img" aria-label="Four dashboard panels. Dropout falling from 26 percent to about 20. New business at a record 3 crore plus. An upsell pipeline of 54.5 lakh rupees. Collections at 97 percent efficiency and feedback coverage at 80 percent of schools.">
+        <rect class="dg-node" x="20" y="20" width="424" height="140" rx="12"/>
+        <text class="dg-t-hd" x="38" y="48">DROPOUT, CONTAINED</text>
+        <text class="dg-t" x="38" y="80" style="font-size:12px">Before</text>
+        <rect x="130" y="62" width="286" height="24" rx="5" fill="#E0446D"/>
+        <text x="404" y="79" text-anchor="end" fill="#fff" font-size="13" font-weight="700" font-family="var(--font-text)">26%</text>
+        <text class="dg-t" x="38" y="122" style="font-size:12px">Now</text>
+        <rect x="130" y="104" width="220" height="24" rx="5" fill="#16A34A"/>
+        <text x="338" y="121" text-anchor="end" fill="#fff" font-size="13" font-weight="700" font-family="var(--font-text)">~20%</text>
+        <text class="dg-t-sm" x="38" y="150">Post cycle returns counted in</text>
+
+        <rect class="dg-node" x="456" y="20" width="424" height="140" rx="12"/>
+        <text class="dg-t-hd" x="474" y="48">NEW BUSINESS</text>
+        <text x="474" y="102" fill="var(--case)" font-size="40" font-weight="800" font-family="var(--font-display)">₹3 Cr+</text>
+        <text class="dg-t-sm" x="474" y="126">in a single year, the first time in</text>
+        <text class="dg-t-sm" x="474" y="140">the program's 20 year history</text>
+        <rect x="700" y="118" width="24" height="22" rx="4" fill="var(--case-soft)"/>
+        <rect x="730" y="104" width="24" height="36" rx="4" fill="var(--case-soft)"/>
+        <rect x="760" y="88" width="24" height="52" rx="4" fill="var(--case-line)"/>
+        <rect x="790" y="60" width="24" height="80" rx="4" fill="var(--case)"/>
+
+        <rect class="dg-node" x="20" y="176" width="424" height="134" rx="12"/>
+        <text class="dg-t-hd" x="38" y="204">MONETISATION OF EXISTING SCHOOLS</text>
+        <text x="38" y="252" fill="#D99A00" font-size="30" font-weight="800" font-family="var(--font-display)">₹54.5 L</text>
+        <text class="dg-t-sm" x="38" y="276">upsell pipeline from schools already running</text>
+        <text class="dg-t-sm" x="38" y="290">the program, at near zero acquisition cost</text>
+        <rect x="300" y="240" width="120" height="10" rx="5" fill="var(--bg-sunken)"/>
+        <rect x="300" y="240" width="86" height="10" rx="5" fill="#D99A00"/>
+
+        <rect class="dg-node" x="456" y="176" width="424" height="134" rx="12"/>
+        <text class="dg-t-hd" x="474" y="204">HEALTH WHILE GROWING</text>
+        <circle cx="530" cy="258" r="30" fill="none" stroke="var(--bg-sunken)" stroke-width="9"/>
+        <path d="M530 228 A30 30 0 1 1 512 285" fill="none" stroke="#16A34A" stroke-width="9" stroke-linecap="round"/>
+        <text x="530" y="263" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="800" font-family="var(--font-display)">97%</text>
+        <text class="dg-t-sm" x="578" y="246">collection efficiency</text>
+        <circle cx="700" cy="258" r="30" fill="none" stroke="var(--bg-sunken)" stroke-width="9"/>
+        <path d="M700 228 A30 30 0 1 1 675 274" fill="none" stroke="#0EA5E9" stroke-width="9" stroke-linecap="round"/>
+        <text x="700" y="263" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="800" font-family="var(--font-display)">80%</text>
+        <text class="dg-t-sm" x="748" y="246">of schools in the</text>
+        <text class="dg-t-sm" x="748" y="260">feedback system</text>
+      </svg>
+    </div>
+    <figcaption class="diagram-note">
+      The live tool runs on internal data and stays private. A walkthrough with the data anonymised is
+      available in an interview setting.
+    </figcaption>
+  </figure>
 </section>
 
 <section class="section-sm" id="sip-academy--takeaway">
@@ -4376,7 +4400,7 @@
     <a href="#sip-academy--problem">The problem</a>
     <a href="#sip-academy--work">The approach</a>
     <a href="#sip-academy--shipped">What shipped</a>
-    <a href="#sip-academy--dashboard">The tool</a>
+    <a href="#sip-academy--dashboard">The results</a>
     <a href="#sip-academy--takeaway">Takeaway</a>
   </aside>
 
@@ -5101,7 +5125,7 @@
   </div>
 </footer>
 
-<script src="assets/main.js?v=3"></script>
-<script src="assets/router.js?v=3"></script>
+<script src="assets/main.js?v=4"></script>
+<script src="assets/router.js?v=4"></script>
 </body>
 </html>
