@@ -48,7 +48,8 @@
     filters.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var want = btn.getAttribute('data-filter');
-        filters.forEach(function (b) { b.classList.toggle('is-on', b === btn); });
+        if (btn.classList.contains('is-on')) { want = 'all'; }
+        filters.forEach(function (b) { b.classList.toggle('is-on', b === btn && want !== 'all'); });
 
         var shown = 0;
         blocks.forEach(function (block) {
